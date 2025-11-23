@@ -29,7 +29,7 @@ class HomeControllerTest {
         request.setHttpMethod(HttpMethod.GET.toString());
         var response = handler.handleRequest(request, new MockLambdaContext());
 
-        assertEquals(HttpStatus.OK.getCode(), response.getStatusCode());
-        assertEquals("Hello there",  response.getBody());
+        assertEquals(HttpStatus.SEE_OTHER.getCode(), response.getStatusCode());
+        assertEquals("https://google.com",  response.getHeaders().get("Location"));
     }
 }
