@@ -11,6 +11,6 @@ public class HomeController {
 
     @Get
     public HttpResponse<Void> index() throws URISyntaxException {
-        return HttpResponse.seeOther(new URI("https://google.com"));
+        return HttpResponse.seeOther(new URI("https://github.com/micronaut-projects/micronaut-aws/issues/2431"));
     }
 }
