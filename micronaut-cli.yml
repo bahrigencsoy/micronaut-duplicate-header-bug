@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: micronaut.duplicate.header.bug
+testFramework: junit
+sourceLanguage: java
+buildTool: maven
+features: [app-name, aws-lambda, aws-lambda-events-serde, aws-lambda-handler-default, http-client-test, java, java-application, junit, logback, maven, maven-enforcer-plugin, micronaut-aot, micronaut-http-validation, properties, readme, serialization-jackson, shade, snapstart, static-resources, x86]
