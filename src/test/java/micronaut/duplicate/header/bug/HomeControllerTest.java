@@ -30,6 +30,6 @@ class HomeControllerTest {
         var response = handler.handleRequest(request, new MockLambdaContext());
 
         assertEquals(HttpStatus.SEE_OTHER.getCode(), response.getStatusCode());
-        assertEquals("https://github.com/micronaut-projects/micronaut-aws/issues/2431",  response.getHeaders().get("Location"));
+        assertEquals("https://github.com/micronaut-projects/micronaut-aws/issues/2437",  response.getHeaders().get("Location"));
     }
 }
